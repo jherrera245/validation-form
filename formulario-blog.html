@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Blog Comentarios</title>
+</head>
+<body>
+    <div class="container">
+        <div class="col-lg-7 col-sm-12 m-auto">
+            <h4 class="text-center text-secondary mt-4">Cometarios</h4>
+            <form id="form">
+                <div class="card mt-4">
+                    <div class="card-header fw-bold">
+                        <i class="fa fa-edit"></i>
+                        Agrega tu comentario
+                    </div>
+
+                    <div class="card-body">
+
+                        <div class="row">
+
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold" for="nombre">Nombre</label>
+                                    <input type="text" name="nombre" id="nombre" class="form-control" 
+                                    placeholder="Ingresa tu nombre" maxlength="75">
+                                    <div id="valid-nombre"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold" for="email">Email</label>
+                                    <input type="email" name="email" id="email" class="form-control" class="form-control" 
+                                    placeholder="Ingresa tu dirección de correo electronico">
+                                    <div id="valid-email"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold" for="precio">Web Site</label>
+                                    <input type="text" name="site" id="site" class="form-control" 
+                                    placeholder="Ingresa el nombre del sitio web">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold" for="precio">Comentario</label>
+                                    <textarea name="comentario" id="comentario" class="form-control"
+                                     rows="3" placeholder="Ingresa tu comentario"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold" for="genero">Genero</label>
+                                    <div class="mt-2">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" id="masculino" name="genero" value="M">
+                                            <label class="form-check-label" for="genero">Masculino</label>
+                                          </div>
+                                          <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" id="femenino" name="genero" value="F">
+                                            <label class="form-check-label" for="genero">Femenino</label>
+                                          </div>
+                                    </div>
+                                    <div id="valid-gender"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card-footer">
+                        <button class="btn btn-primary" type="button" id="send">
+                            <i class="fa fa-edit"></i>
+                            Enviar
+                        </button>
+                        <button class="btn btn-secondary" type="reset">
+                            <i class="fa fa-refresh"></i>
+                            Cancelar
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/valid-form-blog.js"></script>
+</body>
+</html>
